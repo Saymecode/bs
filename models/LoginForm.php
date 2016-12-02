@@ -48,6 +48,8 @@ class LoginForm extends Model
             if(!$user || !$user->validatePassword($this->password)):
                 $this->addError($attribute, 'Not correct name or password');
             endif;
+
+        
         endif;
     }
     public  function getUser(){
