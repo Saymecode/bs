@@ -15,46 +15,49 @@ use app\models\Category;
                 /*@var $product Cart*/
                 /*@var $product Product*/
                 $items = Cart::getProducts();
-                foreach ($items as $item):
-                    $product = Product::findOne($item->idProduct);
-                    ?>
-                    <div class="cart-header">
-                        <?= Html::a('', ['cart/cart'],
-                            ['class' => 'close1',
-                                'data' => [
-                                    'method' => 'post',
-                                    'params' => [
-                                        'idCartToDelete' => $item->idCart,
+                if($items):
+                    foreach ($items as $item):
+                        $product = Product::findOne($item->idProduct);
+                        ?>
+                        <div class="cart-header">
+                            <?= Html::a('', ['cart/cart'],
+                                ['class' => 'close1',
+                                    'data' => [
+                                        'method' => 'post',
+                                        'params' => [
+                                            'idCartToDelete' => $item->idCart,
+                                        ],
+
                                     ],
-
-                                ],
-                                'data-pjax' => 0,
-                            ]) ?>
-                        <div class="cart-sec simpleCart_shelfItem">
-                            <div class="cart-item cyc">
-                                <img src="images/<?= $product->img ?>.jpg"
-                                     class="img-responsive" alt=""/>
-                            </div>
-                            <div class="cart-item-info">
-                                <h3><a href="#"><?=$product->name?></a><span>Category : <?=Category::findOne($product->idCategory)->name ?></span></h3>
-                                <ul class="qty">
-                                    <li><p>Price : <?=$product->price?></p></li>
-                                    <li><p>Description : <?=$product->quite?></p></li>
-                                </ul>
-
-                                <div class="delivery">
-                                    <p>Service Charges : 5.00</p>
-                                    <span>Delivered in 2-3 bussiness days</span>
-                                    <div class="clearfix"></div>
+                                    'data-pjax' => 0,
+                                ]) ?>
+                            <div class="cart-sec simpleCart_shelfItem">
+                                <div class="cart-item cyc">
+                                    <img src="images/<?= $product->img ?>.jpg"
+                                         class="img-responsive" alt=""/>
                                 </div>
+                                <div class="cart-item-info">
+                                    <h3>
+                                        <a href="#"><?= $product->name ?></a><span>Category : <?= Category::findOne($product->idCategory)->name ?></span>
+                                    </h3>
+                                    <ul class="qty">
+                                        <li><p>Price : <?= $product->price ?></p></li>
+                                        <li><p>Description : <?= $product->quite ?></p></li>
+                                    </ul>
+
+                                    <div class="delivery">
+                                        <p>Service Charges : 5.00</p>
+                                        <span>Delivered in 2-3 bussiness days</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+
                             </div>
-                            <div class="clearfix"></div>
-
                         </div>
-                    </div>
-                    <?php
+                        <?php
 
-                endforeach;
+                    endforeach;
 
                 ?>
             </div>
@@ -79,7 +82,7 @@ use app\models\Category;
                 <div class="clearfix"></div>
                 <?=Html::a('Place Order', ['cart/order'], ['class'=>'order'])?>
             </div>
-
+            <?php endif;?>
             <div class="clearfix"></div>
         </div>
     </div>

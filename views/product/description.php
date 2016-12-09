@@ -160,7 +160,7 @@ ProductAsset::register($this);
             </div>
             <div class="col-md-7 single-top-in simpleCart_shelfItem">
                 <div class="single-para ">
-                    <h4>Lorem Ipsum</h4>
+                    <h4><?=$product->name?></h4>
                     <div class="star-on">
                         <ul class="star-footer">
                             <?php
@@ -178,36 +178,8 @@ ProductAsset::register($this);
                     </div>
 
                     <h5 class="item_price">$<?=$product->price?></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat </p>
-                    <div class="available">
-                        <ul>
-                            <li>Color
-                                <select>
-                                    <option>Silver</option>
-                                    <option>Black</option>
-                                    <option>Dark Black</option>
-                                    <option>Red</option>
-                                </select></li>
-                            <li class="size-in">Size<select>
-                                    <option>Large</option>
-                                    <option>Medium</option>
-                                    <option>small</option>
-                                    <option>Large</option>
-                                    <option>small</option>
-                                </select></li>
-                            <div class="clearfix"> </div>
-                        </ul>
-                    </div>
-                    <ul class="tag-men">
-                        <li><span>TAG</span>
-                            <span class="women1">: Women,</span></li>
-                        <li><span>SKU</span>
-                            <span class="women1">: CK09</span></li>
-                    </ul>
-
                     <?=Html::a('ADD TO CART', ['product/description', 'id'=>$product->idProduct, 'idToCart'=>$product->idProduct], ['class'=>'add-cart item_add'])?>
+                    <p><?=$product->text?> </p>
 
                 </div>
             </div>

@@ -39,6 +39,7 @@ jQuery(document).ready(function($){
 			tabs.parent('.cd-tabs').removeClass('is-ended');
 		}
 	}
+    
 	function foo () {
 		$("#slider").responsiveSlides({
 			auto: true,
@@ -49,4 +50,22 @@ jQuery(document).ready(function($){
 		});
 	}
 	foo();
+    delCountItemCart();
+    delAllCountItemCart();
 });
+function delCountItemCart(){
+    $("body").on('click', '.close1', function() {
+        var cover = $(this).closest(".cart-header");
+        var str = cover.find($(".qty :first-child p")).text();
+        var price = str.match(/\d+.\d+/g);
+        $(".cart.box_1 .total :first-child").text(($(".cart.box_1 .total :first-child").text() - price).toFixed(2));
+        $("#simpleCart_quantity").text($("#simpleCart_quantity").text() - 1);
+    });
+}
+function delAllCountItemCart(){
+    $("body").on('click', '.order', function() {
+        console.log("ok");
+        $(".cart.box_1 .total :first-child").text(0);
+        $("#simpleCart_quantity").text(0);
+    })
+}

@@ -86,7 +86,7 @@ AppAsset::register($this);
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
-                    <li class="active grid"><a class="color8" href="index.html">Home</a></li>
+                    <li class="active grid"><?=Html::a("Home", Yii::$app->homeUrl)?></li>
                     <li><a class="color1" href="#">Men</a>
                         <div class="mepanel">
                             <div class="row">
