@@ -69,7 +69,7 @@ AppAsset::register($this);
                     <a href="<?=Url::to(['/cart/cart'])?>">
                         <h3> <div class="total">
                                 <span><?=Cart::priceInTheCart()?></span> (<span id="simpleCart_quantity"><?=Cart::itemsInTheCart()?></span> items)</div>
-                            <img src="images/cart.png" alt=""/></h3>
+                            <?= Html::img('@web/images/cart.png');?></h3>
                     </a>
                     <?php if(!Cart::itemsInTheCart()): ?> <p><a href="#" class="simpleCart_empty">Empty Cart</a></p> <?php endif;?>
 
@@ -82,7 +82,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="head-top">
             <div class="logo">
-                <a href="<?=Url::to(['site/index'])?>"><img src="images/logo.png" alt=""></a>
+                <a href="<?=Url::to(['site/index'])?>"><?= Html::img('@web/images/logo.png');?> </a>
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">

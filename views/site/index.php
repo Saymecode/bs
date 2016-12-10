@@ -65,7 +65,7 @@ use yii\helpers\Url;
                 <?php
                 foreach ($products as $product):?>
                     <div class="col-md-4 grid-top">
-                        <a href="<?=Url::to(['/product/description', 'id' => $product->idProduct])?>" class="b-link-stripe b-animate-go  thickbox"><?= Html::img('images/'.$product->img.'.jpg', ['alt'=>'', 'class'=>'img-responsive']);?>
+                        <a href="<?=Url::to(['/product/description', 'id' => $product->idProduct])?>" class="b-link-stripe b-animate-go  thickbox"><?= Html::img('@web/images/'.$product->img.'.jpg', ['alt'=>'', 'class'=>'img-responsive']);?>
                             <div class="b-wrapper">
                                 <h3 class="b-animate b-from-left    b-delay03 ">
                                     <span>$<?=$product->price?></span>
