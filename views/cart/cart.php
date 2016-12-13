@@ -33,8 +33,7 @@ use app\models\Category;
                                 ]) ?>
                             <div class="cart-sec simpleCart_shelfItem">
                                 <div class="cart-item cyc">
-                                    <img src="images/<?= $product->img ?>.jpg"
-                                         class="img-responsive" alt=""/>
+                                    <?=Html::img("@web/images/$product->img.jpg", ['class'=>'img-responsive'])?>
                                 </div>
                                 <div class="cart-item-info">
                                     <h3>
