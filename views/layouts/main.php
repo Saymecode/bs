@@ -38,7 +38,7 @@ AppAsset::register($this);
 <div class="header">
     <div class="header-top">
         <div class="container">
-            <?php if(Yii::$app->controller->id=="site"):?>
+            <?php if(Yii::$app->controller->id==Yii::$app->params['mainController']):?>
             <div class="search">
                 <?php $form = ActiveForm::begin([
                     'action' => ['site/search'],
