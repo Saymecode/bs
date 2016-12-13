@@ -84,7 +84,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="head-top">
             <div class="logo">
-                <a href="<?=Url::to(['site/index'])?>"><?= Html::img('@web/images/logo.png');?> </a>
+                <a href="<?=Url::to(Yii::$app->homeUrl)?>"><?= Html::img('@web/images/logo.png');?> </a>
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
