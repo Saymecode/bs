@@ -44,7 +44,7 @@ AppAsset::register($this);
                 ]);
                 $model = new SearchForm();
                 ?>
-                <?=Html::activeTextInput($model, 'str', ['placeholder'=>'Search']); ?>
+                <?=Html::activeTextInput($model, 'str', ['placeholder'=>'Product name']); ?>
                 <!--<?= $form->field($model, 'str')->label(false) ?> -->
 
                 <?= Html::submitInput('Go', ['class' => '', 'name'=>'Search']) ?>
