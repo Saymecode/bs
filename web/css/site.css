@@ -4,6 +4,16 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+.product-price1,.single-top,.single-top-in {
+	padding: 0;
+}
+.product-price1{
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.single-top-in{
+	padding-left: 20px;
+}
 body{
 	background:#fff;
 	font-family: 'Roboto', sans-serif;
@@ -420,7 +430,7 @@ height: 35px;
 }
 .b-animate img{
 	margin-top: 4%;
-	display: -webkit-inline-box;
+	display: inline;
 }
 .b-animate span{
 	display:block;
@@ -1757,7 +1767,7 @@ a.item_add1 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 10px 15px;
-  background: url(0) #f54d56;
+  background: #f54d56;
 }
 a.item_add1:hover{
 	background:rgb(3, 193, 167);
@@ -2320,9 +2330,6 @@ a.item_add p.number {
 }
 .register-top-grid h3, .register-bottom-grid h3 {
   font-size: 1.1em;
-}
-.product-price1,.single-top,.single-top-in {
-  padding: 0;
 }
 .single-para h4 {
   font-size: 1.5em;
