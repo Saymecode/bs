@@ -38,6 +38,7 @@ AppAsset::register($this);
 <div class="header">
     <div class="header-top">
         <div class="container">
+            <?php if(Yii::$app->controller->id=="site"):?>
             <div class="search">
                 <?php $form = ActiveForm::begin([
                     'action' => ['site/search'],
@@ -50,6 +51,7 @@ AppAsset::register($this);
                 <?= Html::submitInput('Go', ['class' => '', 'name'=>'Search']) ?>
                 <?php ActiveForm::end(); ?>
             </div>
+            <?php endif;?>
             <div class="header-left">
                 <ul>
                     <?php if(!Yii::$app->user->isGuest):?>
