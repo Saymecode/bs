@@ -40,7 +40,7 @@ AppAsset::register($this);
         <div class="container">
             <div class="search">
                 <?php $form = ActiveForm::begin([
-                    'action' => ['contact/contact'],
+                    'action' => ['site/search'],
                 ]);
                 $model = new SearchForm();
                 ?>

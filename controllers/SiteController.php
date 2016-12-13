@@ -78,7 +78,7 @@ class SiteController extends Controller
         return $this->render('index', compact('products', 'pagination'));
     }
     public function actionSearch(){
-        $searchText = Yii::$app->request->post('searchText');
+        $searchText = Yii::$app->request->post('SearchForm')['str'];
 
         $products = Product::find()->where("`name` LIKE '%$searchText%'");
         $pagination = new Pagination([
