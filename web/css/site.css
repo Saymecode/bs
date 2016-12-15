@@ -14,6 +14,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .single-top-in{
 	padding-left: 20px;
 }
+.login-container{
+	padding-bottom: 30px;
+}
 body{
 	background:#fff;
 	font-family: 'Roboto', sans-serif;

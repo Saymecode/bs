@@ -17,7 +17,7 @@ use yii\helpers\Url;
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                             classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                             Latin professor .</p>
-                        <a href="single.html">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
 
                 </li>
@@ -28,7 +28,7 @@ use yii\helpers\Url;
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                             classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                             Latin professor .</p>
-                        <a href="single.html">Learn More</a>
+                        <a href="#">Learn More</a>
 
                     </div>
 
@@ -39,7 +39,7 @@ use yii\helpers\Url;
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                             classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                             Latin professor .</p>
-                        <a href="single.html">Learn More</a>
+                        <a href="#">Learn More</a>
 
                     </div>
 
