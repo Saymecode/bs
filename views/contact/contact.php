@@ -40,15 +40,14 @@ use yii\helpers\Html;
                     <h4>Address1</h4>
                     <p>Tel:1115550001</p>
                     <p>Fax:190-4509-494</p>
-                    <p>Email:<a href="mailto:contact@example.com"> contact@example.com</a></p>
+                    <p>Email:<a href="mailto:Saymecode@yahoo.com">Saymecode@yahoo.com</a></p>
                 </div>
 
             </div>
             <div class="clearfix"> </div>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5692.364723058121!2d26.98203648946602!3d49.42916208546603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab6b194762cd15e9!2sKinoteatr+%22Planeta%22!5e0!3m2!1sit!2sit!4v1481805159249" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
     </div>
 
 </div>
